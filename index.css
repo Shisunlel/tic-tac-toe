@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board{
+    width: 100%;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.squares{
+    display: grid;
+    grid: auto / repeat(3, 1fr);
+    max-width: 50%;
+    gap: 2ch;
+    padding: .5em;
+    border: 2px solid black;
+}
+
+.squares > * {
+    width: 100%;
+    max-width: 10ch;
+    padding: 2em;
+    background: red;
+}
