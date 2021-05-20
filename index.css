@@ -9,6 +9,39 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: lightskyblue;
+}
+
+.reset{
+    position: absolute;
+    top: 2rem;
+}
+
+.reset > * {
+    display: none;
+    font-size: 1.5rem;
+    padding: 1em;
+    border: 0;
+    box-shadow: 2px 2px 3px 0 #2e2e2e;
+    background: #3dcdac;
+    color: #eee;
+    cursor: pointer;
+    outline: 0;
+    border-radius: 10px;
+}
+
+.reset > *:hover {
+    filter: brightness(90%);
+}
+
+.result{
+    display: none;
+    position: absolute;
+    top: calc(5rem + 3rem);
+}
+
+.result > *{
+    color: lightseagreen;
 }
 
 .board{
@@ -22,15 +55,20 @@ body{
 .squares{
     display: grid;
     grid: auto / repeat(3, 1fr);
-    max-width: 50%;
+    max-width: 100%;
     gap: 2ch;
     padding: .5em;
-    border: 2px solid black;
+    outline: 1ch solid deeppink;
 }
 
 .squares > * {
     width: 100%;
     max-width: 10ch;
     padding: 2em;
-    background: red;
+    background: lightslategrey;
+    color: whitesmoke;
+}
+
+.squares > *:hover{
+    filter: brightness(110%);
 }
